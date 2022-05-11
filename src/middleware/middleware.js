@@ -1,34 +1,6 @@
 // const jwt = require("jsonwebtoken")
 const blogModel = require("../models/blogModel")
-// const AuthorModel = require("../models/authorModel")
 
-// const userAuthentication = async function (req, res, next) {
-//     try {
-//         let token = req.headers["x-auth-token"];
-
-//         if (!token) {
-//             return res.send({ status: false, msg: "token is not present" });
-//         }
-//         let decodedToken = jwt.verify(token, "First project");
-//         if (!decodedToken) {
-//             return res.send({ status: false, msg: "invalid token" });
-//         }
-//         let validData = req.query.authorId
-//         let userLoggedIn = decodedToken.authorId
-       
-//         if (validData !== userLoggedIn) {
-//             return res.send({ status: false, msg: 'not authorized' })
-//         }else{
-//             next()
-//         }
-
-       
-
-//     } catch (err) {
-//         console.log(err)
-//         res.status(500).send({ msg: err.message })
-//     }
-// }
 
 const jwt = require("jsonwebtoken");
 
